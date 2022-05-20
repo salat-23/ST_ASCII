@@ -1,9 +1,11 @@
+using System;
+
 namespace ST_ASCII.Geometry;
 
 /// <summary>
 /// May be used to draw circular shapes in console.
 /// </summary>
-public class Circle : GeometricShape, Drawable
+public class Circle : GeometricShape, IDrawable
 {
     
     public int Radius { get; set; }

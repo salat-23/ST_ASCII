@@ -1,9 +1,11 @@
+using System;
+using System.Collections.Generic;
 using ST_ASCII.Geometry;
 
 namespace ST_ASCII.Gui;
 
 [Obsolete("This class is WIP")]
-public class SelectBox : GuiElement, Drawable
+public class SelectBox : GuiElement, IDrawable
 {
     
     public class Button

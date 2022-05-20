@@ -1,9 +1,11 @@
+using System;
+
 namespace ST_ASCII.Geometry;
 
 /// <summary>
 /// May be used to draw rectangular shapes in console.
 /// </summary>
-public class Rectangle : GeometricShape, Drawable
+public class Rectangle : GeometricShape, IDrawable
 {
     public int Width
     {

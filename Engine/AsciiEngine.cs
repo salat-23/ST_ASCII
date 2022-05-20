@@ -1,3 +1,5 @@
+using System;
+
 namespace ST_ASCII;
 
 /// <summary>
@@ -13,7 +15,7 @@ public class AsciiEngine
     const float HighLimit = 0.1f;            // Keep above 10fps
 
     private GameState state;
-    public Ascii Ascii { get; private set; }
+    public Ascii Ascii { get; }
 
     public AsciiEngine(int width, int height)
     {

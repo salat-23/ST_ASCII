@@ -1,4 +1,6 @@
 
+using System;
+using System.Collections.Generic;
 using ST_ASCII.Utility;
 
 namespace ST_ASCII
@@ -49,7 +51,7 @@ namespace ST_ASCII
             return isPressed;
         }
 
-        public bool IsConsolePresser(ConsoleKey key)
+        public bool IsConsolePressed(ConsoleKey key)
         {
             return FastConsole.IsConsolePressed(key);
         }
@@ -71,7 +73,7 @@ namespace ST_ASCII
             Draw(position.x, position.y, text, foreground, background);
         }
         
-        public void Draw(Vector2Int position, Drawable drawable, ConsoleColor foreground = ConsoleColor.White,
+        public void Draw(Vector2Int position, IDrawable drawable, ConsoleColor foreground = ConsoleColor.White,
             ConsoleColor background = ConsoleColor.Black)
         {
             Draw(position.x, position.y, drawable, foreground, background);
@@ -97,7 +99,7 @@ namespace ST_ASCII
                 FastConsole.Draw(x, y, text, foreground, background);
         }
 
-        public void Draw(int x, int y, Drawable drawable, ConsoleColor foreground = ConsoleColor.White,
+        public void Draw(int x, int y, IDrawable drawable, ConsoleColor foreground = ConsoleColor.White,
             ConsoleColor background = ConsoleColor.Black)
         {
             drawable.DrawSelf(this, x, y, foreground, background);

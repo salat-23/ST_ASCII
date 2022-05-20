@@ -1,4 +1,5 @@
-﻿using ST_ASCII;
+﻿using System;
+using ST_ASCII;
 using ST_ASCII.Geometry;
 
 namespace ExampleSimpleUsage;
