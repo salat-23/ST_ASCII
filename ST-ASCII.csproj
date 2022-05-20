@@ -8,14 +8,23 @@
 
     <ItemGroup>
       <Compile Remove="Example2DField\**" />
+      <Compile Remove="Examples\ExampleGame\bin\**" />
+      <Compile Remove="Examples\ExampleGame\obj\**" />
+      <Compile Remove="Examples\**" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Example2DField\**" />
+      <EmbeddedResource Remove="Examples\ExampleGame\bin\**" />
+      <EmbeddedResource Remove="Examples\ExampleGame\obj\**" />
+      <EmbeddedResource Remove="Examples\**" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Example2DField\**" />
+      <None Remove="Examples\ExampleGame\bin\**" />
+      <None Remove="Examples\ExampleGame\obj\**" />
+      <None Remove="Examples\**" />
     </ItemGroup>
 
 </Project>
