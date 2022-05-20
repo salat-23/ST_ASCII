@@ -32,6 +32,8 @@ Below is the example how you can start using this engine **(Look in folder Examp
 
 This engine is still work in progress, so I will constantly add more documentation and features. I will accept pull requests as well as new ideas. Hope you enjoy my little work here)
 
+# Package available on NuGet: ST_ASCII
+
 # Warning! Console window is not resizable, because console buffer starts behaving very strange when you resize it.
 # Although you can use windows aero function (drag window on top of the screen and hold) to break this rule and see what happens =) 
 # If you want to make window bigger, just hold Ctrl and use your mouse wheel to scale console window.

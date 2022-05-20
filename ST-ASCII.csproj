@@ -4,6 +4,15 @@
         <TargetFramework>net6.0</TargetFramework>
         <RootNamespace>ST_ASCII</RootNamespace>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ST_ASCII</Title>
+        <Authors>salat23</Authors>
+        <Description>Windows console ascii engine</Description>
+        <PackageProjectUrl>https://github.com/salat-23/ST_ASCII</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/salat-23/ST_ASCII/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageIcon>st_ascii_icon.png</PackageIcon>
+        <RepositoryUrl>https://github.com/salat-23/ST_ASCII</RepositoryUrl>
+        <PackageTags>ascii game engine console</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
@@ -25,6 +34,11 @@
       <None Remove="Examples\ExampleGame\bin\**" />
       <None Remove="Examples\ExampleGame\obj\**" />
       <None Remove="Examples\**" />
+      <None Include="..\..\..\st_ascii_icon.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+        <Link>st_ascii_icon.png</Link>
+      </None>
     </ItemGroup>
 
 </Project>
